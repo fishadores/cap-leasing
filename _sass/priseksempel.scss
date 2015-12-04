@@ -1,0 +1,72 @@
+#priseksempel{
+    .price-box {
+		background: #444;
+	}
+	
+	
+	
+	.price-box .header h3 {
+		padding: 12px 10px;
+		margin-bottom: 0;
+		position: relative;
+		text-transform: uppercase;
+		overflow: hidden;
+		background: #474747;
+		color: #fff;
+	}
+	
+	.header.active h3 {
+		color: #fff;
+		background-color: #00a99d;
+	}
+	
+	.price-box .header .price {
+		background: #000;
+		padding: 15px 10px;
+	}
+	
+	.price-box ul li {
+		padding: 13px 0;
+		border-bottom: 1px solid #555;
+	}
+	
+	.list-unstyled {
+		padding-left: 0;
+		list-style: none;
+	}
+	
+	div.header {
+		margin-bottom: 0px;
+	}
+	
+	.btn-white {
+		color: #fff;
+		padding: 0px;
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		background-color: transparent;
+	}
+	
+	.btn {
+	    text-transform: uppercase;
+		font-weight: 400;
+		font-size: 14px;
+		letter-spacing: 2px;
+		border-radius: 0px;
+		font-family: 'Lato', sans-serif;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		transition: all .3s ease;
+	}
+	
+	.price-footer {
+		padding: 20px;
+	}
+	
+	.btn-border-theme {
+		border: 1px solid #00a99d;
+		color: #00a99d;
+		padding: 10px 25px;
+		background-color: transparent;
+	}
+}

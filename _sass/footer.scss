@@ -1,0 +1,32 @@
+.site-footer {
+	background-color: $darkgray;
+	text-align: center;
+	padding: 70px;
+	
+	span.elegant {
+		font-family: 'Condiment', cursive;
+		font-weight: 300;
+		margin: 0px;
+		font-size: 26px;
+		margin-bottom: 0px;
+		letter-spacing: 1px;
+	}
+	
+	span.dominant {
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		margin: 0px;
+		font-size: 26px;
+		margin-bottom: 0px;
+		letter-spacing: 1px;
+	}
+	
+	ul.social {
+		a {
+			font-size: 20px;
+			color: #ffffff;
+		}
+	}
+	
+}

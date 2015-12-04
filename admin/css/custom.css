@@ -1,0 +1,39 @@
+body.ember-application .cms-control-pane, body.ember-application .cms-preview-pane {
+    overflow-y: initial;
+}
+
+textarea {
+    /*overflow-x: hidden;*/
+}
+
+body.ember-application .cms-navbar-bottom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.cms-control-pane {
+    overflow-y: visible !important;
+}
+
+body.ember-application .cms-entry-editor {
+    margin-bottom: 60px;
+}
+
+input[type="checkbox"] {
+    height: 14px !important;
+}
+
+.cms-logo svg {
+    display: none;
+}
+
+.cms-logo a:after {
+    content: "KULSVIERGÅRDEN";
+    font-size: 20px;
+    color: #e0e6e7;
+}
+
+body.ember-application .cms-logo {
+    width: 200px;
+}

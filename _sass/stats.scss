@@ -1,0 +1,28 @@
+#statistik{
+        margin-bottom: -1px;
+    .parallax-window {
+        min-height: 400px;
+        background: transparent;
+    }
+    
+    .fact-box {
+        padding: 25px 30px;
+        background-color: rgba(255,255,255,0.8);
+    }
+    
+    .container {
+        transform: translateY(50%);
+        padding-top: 30px;
+    }
+    
+    .fact-box h2 {
+        color: #00a99d;
+        font-size: 45px;
+    }
+    
+    .fact-box h5 {
+        color: #000;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+    }
+}
