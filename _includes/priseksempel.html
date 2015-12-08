@@ -11,81 +11,42 @@
 
     <div class="container">
         <div class="row">
+            {% for post in site.posts %}
             <div class="col-sm-4 margin-bottom30">
                 <div class="price-box text-center">
                     <div class="car-container">
-                        <div class="car-image" style="background-image: url('images/biler/porsche.png')"></div>
+                        <div class="car-image" style="background-image: url('{{post.billede_1}}')"></div>
                     </div>
-                    <div class="header ">
+                    {% if forloop.index != 2 %}
+                            <div class="header ">
+                    {% else %}
+                            <div class="header active">
+                    {% endif %}
+                    
                         <h3>MERCEDES C220</h3>
                         <div class="price">
-                            <h2>3.150 kr.</h2>
+                            <h2>{{post.maanedlig_ydelse | tusinde }} kr.</h2>
                             <span>Månedlig ydelse</span>
                         </div>
                     </div>
                     <ul class="list-unstyled">
-                        <li>Førstegangsydelse: 48.000</li>
-                        <li>Kilometer: 100.000</li>
-                        <li>Motor: 2,2</li>
-                        <li>Gear: automatisk</li>
-                        <li>Farve: Sort metallic</li>
+                        <li>Førstegangsydelse: {{post.foerstegangsydelse | tusinde }}</li>
+                        <li>Kilometer: {{post.kilometer | tusinde }}</li>
+                        <li>Motor: {{post.volumen}}</li>
+                        <li>Gear: {{post.gear}}</li>
+                        <li>Farve: {{post.farve}}</li>
                     </ul>
                     <div class="price-footer">
-                        <h4><a href="#" class="btn btn-white priseks" data-id="car-1">Showroom</a></h4>
+                        {% if forloop.index != 2 %}
+							 <h4><a href="#" class="btn btn-white priseks" data-url="{{ post.url | prepend: site.baseurl }}">Showroom</a></h4>
+                        {% else %}
+                             <h4><a href="#" class="btn btn-border-theme priseks" data-url="{{ post.url | prepend: site.baseurl }}">Showroom</a></h4>
+						{% endif %}
                     </div>
                 </div>
             </div>
-            <!--price col-->
-            <div class="col-sm-4 margin-bottom30">
-                <div class="price-box text-center">
-                    <div class="car-container">
-                        <div class="car-image" style="background-image: url('images/biler/porsche.png')"></div>
-                    </div>
-                    <div class="header active">
-                        <h3>MERCEDES C220</h3>
-                        <div class="price">
-                            <h2>3.150 kr.</h2>
-                            <span>Månedlig ydelse</span>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled">
-                        <li>Førstegangsydelse: 48.000</li>
-                        <li>Kilometer: 100.000</li>
-                        <li>Motor: 2,2</li>
-                        <li>Gear: automatisk</li>
-                        <li>Farve: Sort metallic</li>
-                    </ul>
-                    <div class="price-footer">
-                        <h4><a href="#" class="btn btn-border-theme priseks" data-id="car-1">Showroom</a></h4>
-                    </div>
-                </div>
-            </div>
-            <!--price col-->
-            <div class="col-sm-4 margin-bottom30">
-                <div class="price-box text-center">
-                    <div class="car-container">
-                        <div class="car-image" style="background-image: url('images/biler/porsche.png')"></div>
-                    </div>
-                    <div class="header ">
-                        <h3>MERCEDES C220</h3>
-                        <div class="price">
-                            <h2>3.150 kr.</h2>
-                            <span>Månedlig ydelse</span>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled">
-                        <li>Førstegangsydelse: 48.000</li>
-                        <li>Kilometer: 100.000</li>
-                        <li>Motor: 2,2</li>
-                        <li>Gear: automatisk</li>
-                        <li>Farve: Sort metallic</li>
-                    </ul>
-                    <div class="price-footer">
-                        <h4><a href="#" class="btn btn-white priseks" data-id="car-1">Showroom</a></h4>
-                    </div>
-                </div>
-            </div>
-            <!--price col-->
+            {% endfor %}
+            
         </div>
     </div>
 </article>

@@ -26,6 +26,12 @@
                         font-size: 24px;
                         color:#ffffff;
                         font-weight: 600;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        width: 250px;
+                        white-space: nowrap;
+                        text-align: center;
+                        margin: auto;
                   }
                   
                   div.price {
