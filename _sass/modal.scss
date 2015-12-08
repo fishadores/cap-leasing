@@ -1,0 +1,140 @@
+.modal-content {
+	border-radius: 0px;
+	.item {
+		height: 400px;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.modal-close {
+		position: absolute;
+		background-color: #ffffff;
+		width: 40px;
+		height: 40px;
+		z-index: 1;
+		right: -20px;
+		border-radius: 50%;
+		text-align: center;
+		top: -20px;
+		font-size: 24px;
+		color: #000000;
+		line-height: 40px;
+		cursor: pointer;
+		border: 1px solid #ffffff;
+		transition: .5s all ease-in-out;
+		&:hover {
+			background-color: #000;
+			color: #ffffff;
+			border: 1px solid #ffffff;
+			transform: rotate(360deg);
+		}
+	}
+	
+	
+	.owl-controls {
+		position: absolute;
+		top: 50%;
+		margin-top: -40px;
+		width: 100%;
+		height: 0px;
+		div.owl-prev {
+			background-color: rgba(0, 0, 0, 0.4);
+			padding: 30px 8px 30px 8px;
+			float: left;
+			transition: .5s all ease-in-out;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+				padding: 30px 8px 30px 30px;
+			}
+		}
+		div.owl-next {
+			background-color: rgba(0, 0, 0, 0.4);
+			padding: 30px 8px 30px 8px;
+			float: right;
+			transition: .5s all ease-in-out;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+				padding: 30px 30px 30px 8px;
+			}
+		}
+	}
+	
+	
+	.car-title {
+		font-family: 'Lato', sans-serif;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 300;
+		color: #3c3c3c;
+		padding: 40px 0px 40px 0px;
+	}
+	
+	.car-description {
+		font-family: 'Lato', sans-serif;
+		color: #3c3c3c;
+		padding: 0px 30px 30px 30px;
+		font-size: 14px;
+	}
+	
+	div.list-prices {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		margin-bottom: 70px;
+		padding: 0px 15px 0px 15px;
+		.price {
+			background-color: #3c3c3c;
+			padding: 30px;
+			.value {
+				text-align: center;
+				color: #ffffff;
+				font-size: 25px;
+			}
+			.valueText {
+				text-align: center;
+				color: #ffffff;
+			}
+			&.green {
+				background-color: #00a99d;
+			}
+		}
+		
+	}
+	
+	.car-data {
+		font-family: 'Lato', sans-serif;
+		color: #ebebeb;
+		font-size: 14px;
+		background-color: $midgray;
+		padding: 0px 15px 30px 15px;
+		div.data-title {
+			font-family: 'Lato', sans-serif;
+			text-align: center;
+			font-size: 30px;
+			font-weight: 300;
+			color: #00a99d;
+			padding: 40px 0px 40px 0px;
+		}
+		div.table {
+			background-color: #444444;
+			padding: 20px;
+			.header {
+				text-align: center;
+				font-weight: 300;
+				font-size: 18px;
+			}
+			div.table-row {
+				font-weight: 300;
+				font-size: 12px;
+				height: 20px;
+				span.th {
+					float: left;
+				}
+				span.td {
+					float: right;
+				}
+			}
+			
+		}
+	}
+	
+}

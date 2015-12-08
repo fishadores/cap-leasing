@@ -1,40 +1,51 @@
 #showroom{
-   div.car-image {
-	   background-size: cover;
-	   height: 220px;
-	   opacity: 0.7;
-   }
-   
-   div.car-container{
-	   position: relative;
-	   height: 220px;
-         margin-top: 30px;
-	   div.car-image {
-		   position: absolute;
-		   top: 0px;
-		   width: 100%;
-	   }
-	   div.car-text {
-		   position: relative;
-		   transform: translateY(-50%);
-		   top: 50%;
-		   text-align: center;
-		   div.title {
-			   font-size: 24px;
-			   color:#ffffff;
-			   font-weight: 600;
-		   }
-		   
-		   div.price {
-			   color: #ffffff;
-			   font-size: 38px;
-			   font-weight: 600;
-			   line-height: 40px;
-		   }
-		   
-		   div.element {
-			   color: #ffffff;
-		   }
-	   }
-   }
+      
+      div.car-container{
+            position: relative;
+            height: 220px;
+            margin-top: 30px;
+            
+            div.car-image {
+                  position: absolute;
+                  top: 0px;
+                  width: 100%;
+                  background-size: cover;
+                  background-position: center;
+                  height: 220px;
+                  opacity: 0.5;
+                  transition: .3s opacity ease-in-out;
+            }
+            
+            
+            div.car-text {
+                  position: relative;
+                  transform: translateY(-50%);
+                  top: 50%;
+                  text-align: center;
+                  div.title {
+                        font-size: 24px;
+                        color:#ffffff;
+                        font-weight: 600;
+                  }
+                  
+                  div.price {
+                        color: #ffffff;
+                        font-size: 38px;
+                        font-weight: 600;
+                        line-height: 40px;
+                  }
+                  
+                  div.element {
+                        color: #ffffff;
+                  }
+            }
+            
+            &:hover{
+                  cursor: pointer;
+                  div.car-image {
+                        opacity: 0.7;
+                  }
+            }
+      
+      }
 }

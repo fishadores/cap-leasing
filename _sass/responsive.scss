@@ -1,0 +1,32 @@
+/* iphone 5 and 6 */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 667px) {
+	#header nav.navbar {
+		padding: 0px;
+		background-color: rgba(0,0,0,.6);
+	}
+	
+	#kontakt form {
+		width: 100%;
+	}
+	
+	#statistik .container {
+		transform: none;
+		padding-top: 0px;
+	}
+	
+	.modal-content .item {
+		height: 250px;
+	}
+	
+	.modal-content .modal-close {
+		top: 5px;
+		right: 5px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 667px) and (orientation : landscape) { 
+	.modal-content .item {
+		height: 100vh;
+	}
+}

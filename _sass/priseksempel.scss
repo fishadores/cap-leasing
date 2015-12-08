@@ -3,7 +3,18 @@
 		background: #444;
 	}
 	
+	p.header-description {
+		padding-bottom: 70px;
+	}
 	
+	.car-container {
+		height: 200px;
+		.car-image {
+			height: 200px;
+			background-position: center;
+			background-size: cover;
+		}
+	}
 	
 	.price-box .header h3 {
 		padding: 12px 10px;
@@ -57,6 +68,11 @@
 		-webkit-transition: all .3s ease;
 		-moz-transition: all .3s ease;
 		transition: all .3s ease;
+		
+		&:hover {
+			background-color: #ffffff;
+			color: #00a99d;
+		}
 	}
 	
 	.price-footer {
@@ -64,6 +80,11 @@
 	}
 	
 	.btn-border-theme {
+		&:hover {
+			background-color: #00a99d;
+			color: #ffffff;
+			border: 1px solid #00a99d;
+		}
 		border: 1px solid #00a99d;
 		color: #00a99d;
 		padding: 10px 25px;

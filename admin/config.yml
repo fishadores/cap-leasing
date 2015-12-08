@@ -6,86 +6,25 @@ development:
 production:
   backend:
     name: github-api
-    repo: interactify/kulsviergaarden # Path to your Github repository
+    repo: interactify/cap-leasing # Path to your Github repository
     branch: master # Branch to update (master by default)
 
 media_folder: "images/uploads" # Folder where user uploaded files should go
 
-collections: # A list of collections the CMS should be able to edit
-
-  - name: "Forside" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Forside" # Used in the UI, ie.: "New Post"
-    folder: "_forside" # The path to the folder where the documents are stored
-    sort: "title:desc" # Default is title:asc
-    create: false # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Overskrift", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Indhold", name: "body", widget: "markdown"}
-      - {label: "Billede", name: "content-image", widget: "image"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Permalink", name: "permalink", widget: "string"}
-      - {label: "Layout (default)", name: "layout", widget: "string"}
-      - {label: "Navn i menu", name: "menu-name", widget: "string"}
-
-
-
-
-  - name: "Nyheder" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Nyheder" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
-    sort: "date:desc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
+collections:
+  - name: "showroom"
+    label: "Showroom"
+    folder: "_posts"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Overskrift", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Nyhed", name: "body", widget: "markdown"}
-      - {label: "Kategori", name: "categories", widget: "string"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Dato", name: "date", widget: "date", format: "YYYY-MM-DD"}
-      - {label: "Layout (default)", name: "layout", widget: "string", default: "default"}
-
-  - name: "Faciliteter" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Faciliteter" # Used in the UI, ie.: "New Post"
-    folder: "_faciliteter" # The path to the folder where the documents are stored
-    sort: "title:desc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Overskrift", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Indhold", name: "body", widget: "markdown"}
-      - {label: "Billede", name: "content-image", widget: "image"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Permalink", name: "permalink", widget: "string"}
-      - {label: "Layout (default)", name: "layout", widget: "string"}
-      - {label: "Navn i menu", name: "menu-name", widget: "string"}
-
-  - name: "Arrangementer" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Arrangementer" # Used in the UI, ie.: "New Post"
-    folder: "_arrangementer" # The path to the folder where the documents are stored
-    sort: "title:desc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Overskrift", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Indhold", name: "body", widget: "markdown"}
-      - {label: "Billede", name: "content-image", widget: "image"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Permalink", name: "permalink", widget: "string"}
-      - {label: "Layout (default)", name: "layout", widget: "string"}
-      - {label: "Navn i menu", name: "menu-name", widget: "string"}
-
-  - name: "Om-os" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Om os" # Used in the UI, ie.: "New Post"
-    folder: "_om-os" # The path to the folder where the documents are stored
-    sort: "title:desc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Overskrift", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Indhold", name: "body", widget: "markdown"}
-      - {label: "Billede", name: "content-image", widget: "image"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Permalink", name: "permalink", widget: "string"}
-      - {label: "Layout (default)", name: "layout", widget: "string"}
-      - {label: "Navn i menu", name: "menu-name", widget: "string"}
+    sort: "date:desc"
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", class: "post-title"}
+      - {label: "Author", name: "author", widget: "string", preview: "author", tagname: "p", class: "post-meta"}
+      - {label: "Cover Image", name: "image", widget: "image", tagname: "div", class: "post-img", folder: "img/posts", optional: true}
+      - {label: "Post Body", name: "body", widget: "markdown", tagname: "div", class: "post-bd"}
+      - {label: "Short Title", name: "short_title", widget: "string", tagname: "h1", class: "blurb-title"}
+      - {label: "Description", name: "description", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails"}
+    meta:
+      - {label: "Tags (seperated by comma)", name: "tags", widget: "tags"}

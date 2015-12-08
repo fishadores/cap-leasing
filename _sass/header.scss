@@ -23,6 +23,23 @@
 		background-color: rgba(0,0,0,0);
 		border: none;
 	}
+	
+	nav.navbar {
+		transition: .5s all ease-in-out;
+		padding: 15px;
+		span {
+			transition: .5s all ease-in-out;
+			font-size: 26px;
+		}
+		&.dark {
+			padding: 5px;
+			background-color: rgba(0,0,0,.6);
+			span {
+				font-size: 20px;
+			}
+		}
+	}
+	
 	div#navbar {
 		ul {
 			li {
@@ -33,6 +50,13 @@
 					color: #ffffff;
 					font-weight: 400;
 					letter-spacing: 1px;
+					transition: 1s color ease-in-out;
+					cursor: pointer;
+				}
+				&.active {
+					a {
+						color: #00a99d;
+					}
 				}
 			}
 			
