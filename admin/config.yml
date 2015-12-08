@@ -19,9 +19,55 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     sort: "date:desc"
     fields:
-      - {label: "Overskrift", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Nyhed", name: "body", widget: "markdown"}
-      - {label: "Kategori", name: "categories", widget: "string"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Dato", name: "date", widget: "date", format: "YYYY-MM-DD"}
-      - {label: "Layout (default)", name: "layout", widget: "string", default: "default"}
+      - {label: "Overskrift", name: "overskrift", widget: "string", tagname: "h1", class: "post-title"}
+      - {label: "Beskrivelse", name: "beskrivelse", widget: "markdown", tagname: "div", class: "post-bd"}
+      - {label: "Førstegangsydelse", name: "foerstegangsydelse", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Månedlig ydelse", name: "maanedlig_ydelse", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Restværdi", name: "restvaerdi", widget: "string", tagname: "p", class: "small muted"}
+      
+      # Motor
+      - {label: "Volumen", name: "volumen", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Cylindre", name: "cylindre", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Antal ventiler", name: "antal_ventiler", widget: "string", tagname: "p", class: "small muted"}
+      
+      # Økonomi
+      - {label: "Tank", name: "tank", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Km/l", name: "kml", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Grøn ejerafgift", name: "groen_ejerafgift", widget: "string", tagname: "p", class: "small muted"}
+      
+      # Transmission
+      - {label: "Gear", name: "gear", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Træk", name: "traek", widget: "string", tagname: "p", class: "small muted"}
+      
+      
+      # Mål
+      - {label: "Længde", name: "laengde", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Bredde", name: "bredde", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Højde", name: "hoejde", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Vægt", name: "vaegt", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Påhæng", name: "paahaeng", widget: "string", tagname: "p", class: "small muted"}
+      
+      # Type
+      - {label: "Type", name: "btype", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Første reg", name: "foerstereg", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Kilometer", name: "kilometer", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Brændstof", name: "braendstof", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Farve", name: "farve", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Døre", name: "doere", widget: "string", tagname: "p", class: "small muted"}
+      
+      # Ydelse
+      - {label: "Effekt", name: "effekt", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Moment", name: "moment", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Topfart", name: "topfart", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "0-100 km/t", name: "acc", widget: "string", tagname: "p", class: "small muted"}
+      
+      - {label: "Billede 1", name: "billede_1", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 2", name: "billede_2", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 3", name: "billede_3", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 4", name: "billede_4", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 5", name: "billede_5", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 6", name: "billede_6", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 7", name: "billede_7", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 8", name: "billede_8", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 9", name: "billede_9", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
+      - {label: "Billede 10", name: "billede_10", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
