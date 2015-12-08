@@ -7,7 +7,8 @@ $(document).ready(function() {
       singleItem:true,
       navigationText: ["<span><i class='ion-chevron-left'></span>", "<span><i class='ion-chevron-right'></span>"],
       autoPlay: 5000,
-      transitionStyle: 'fadeUp'
+      transitionStyle: 'fadeUp',
+      lazyLoad: true
   });
  
 });
