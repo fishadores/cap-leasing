@@ -19,12 +19,9 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     sort: "date:desc"
     fields:
-      - {label: "Title", name: "title", widget: "string", tagname: "h1", class: "post-title"}
-      - {label: "Author", name: "author", widget: "string", preview: "author", tagname: "p", class: "post-meta"}
-      - {label: "Cover Image", name: "image", widget: "image", tagname: "div", class: "post-img", folder: "img/posts", optional: true}
-      - {label: "Post Body", name: "body", widget: "markdown", tagname: "div", class: "post-bd"}
-      - {label: "Short Title", name: "short_title", widget: "string", tagname: "h1", class: "blurb-title"}
-      - {label: "Description", name: "description", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails"}
-    meta:
-      - {label: "Tags (seperated by comma)", name: "tags", widget: "tags"}
+      - {label: "Overskrift", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Nyhed", name: "body", widget: "markdown"}
+      - {label: "Kategori", name: "categories", widget: "string"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Dato", name: "date", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Layout (default)", name: "layout", widget: "string", default: "default"}
