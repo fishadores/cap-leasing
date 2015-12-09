@@ -25,6 +25,36 @@
             background-position: center;
             height: 100%;
             display: block;
+            div.logo {
+                display: block;
+                position: absolute;
+                width: 200px;
+                width: 100%;
+                text-align: center;
+                top: 50%;
+                margin-top: -25px;
+                span.elegant {
+                    font-family: 'Condiment', cursive;
+                    font-weight: 300;
+                    margin: 0px;
+                    font-size: 26px;
+                    margin-bottom: 0px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                }
+                
+                span.dominant {
+                    font-family: 'Lato', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    margin: 0px;
+                    font-size: 26px;
+                    margin-bottom: 0px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                }
+            }
+            
         }
     }
 }
