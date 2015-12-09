@@ -7,7 +7,7 @@
 					<div class="row control-group">
 						<div class="form-group col-xs-12 controls">
 	
-							<input type="text" class="form-control" placeholder="Navn" id="name" required="" data-validation-required-message="Indtast venligst dit navn">
+							<input name="navn" type="text" class="form-control" placeholder="Navn" id="name" required="" data-validation-required-message="Indtast venligst dit navn">
 							<p class="help-block"></p>
 						</div>
 					</div>
@@ -18,7 +18,7 @@
 					<div class="row control-group">
 						<div class="form-group col-xs-12 controls">
 	
-							<input type="email" class="form-control" placeholder="Email Addresse" id="email" required="" data-validation-required-message="Indtast venligst din email addresse">
+							<input name="email" type="email" class="form-control" placeholder="Email Addresse" id="email" required="" data-validation-required-message="Indtast venligst din email addresse">
 							<p class="help-block"></p>
 						</div>
 					</div> 
@@ -27,14 +27,14 @@
 			<div class="row control-group">
 				<div class="form-group col-xs-12  controls">
 	
-					<input type="tel" class="form-control" placeholder="Telefon nummer" id="phone" required="" data-validation-required-message="Indtast venligst dit telefonnummer">
+					<input type="tel" name="telefon" class="form-control" placeholder="Telefon nummer" id="phone" required="" data-validation-required-message="Indtast venligst dit telefonnummer">
 					<p class="help-block"></p>
 				</div>
 			</div>
 			<div class="row control-group">
 				<div class="form-group col-xs-12 controls">
 	
-					<textarea rows="5" class="form-control" placeholder="Besked" id="message" required="" data-validation-required-message="Indtast venligst en besked"></textarea>
+					<textarea rows="5" name="besked" class="form-control" placeholder="Besked" id="message" required="" data-validation-required-message="Indtast venligst en besked"></textarea>
 					<p class="help-block"></p>
 				</div>
 			</div>
@@ -45,7 +45,7 @@
 					<button type="submit" class="btn btn-white btn-lg">Send Besked</button>
 				</div>
 			</div>
-			<input type="hidden" name="form-name" value="contact">
+			
 		</form>
 	</div>
 	
