@@ -28,12 +28,25 @@ input[type="checkbox"] {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+body.ember-application .cms-preview:has(.hidden) {
+    position: relative;
+    padding: 20px 20px 20px 40px;
+}
+
 .cms-logo a:after {
-    content: "KULSVIERGÅRDEN";
+    content: "CAP-LEASING";
     font-size: 20px;
     color: #e0e6e7;
 }
 
 body.ember-application .cms-logo {
-    width: 200px;
+    width: 140px;
 }

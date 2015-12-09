@@ -21,45 +21,45 @@ collections:
     fields:
       - {label: "Overskrift", name: "title", widget: "string", tagname: "h1", class: "post-title"}
       - {label: "Beskrivelse", name: "beskrivelse", widget: "markdown", tagname: "div", class: "post-bd"}
-      - {label: "Førstegangsydelse", name: "foerstegangsydelse", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Månedlig ydelse", name: "maanedlig_ydelse", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Restværdi", name: "restvaerdi", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Førstegangsydelse", name: "foerstegangsydelse", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Månedlig ydelse", name: "maanedlig_ydelse", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Restværdi", name: "restvaerdi", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Motor
-      - {label: "Volumen", name: "volumen", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Cylindre", name: "cylindre", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Antal ventiler", name: "antal_ventiler", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Volumen", name: "volumen", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Cylindre", name: "cylindre", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Antal ventiler", name: "antal_ventiler", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Økonomi
-      - {label: "Tank", name: "tank", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Km/l", name: "kml", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Grøn ejerafgift", name: "groen_ejerafgift", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Tank", name: "tank", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Km/l", name: "kml", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Grøn ejerafgift", name: "groen_ejerafgift", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Transmission
-      - {label: "Gear", name: "gear", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Træk", name: "traek", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Gear", name: "gear", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Træk", name: "traek", widget: "string", tagname: "p", class: "small muted hidden"}
       
       
       # Mål
-      - {label: "Længde", name: "laengde", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Bredde", name: "bredde", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Højde", name: "hoejde", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Vægt", name: "vaegt", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Påhæng", name: "paahaeng", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Længde", name: "laengde", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Bredde", name: "bredde", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Højde", name: "hoejde", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Vægt", name: "vaegt", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Påhæng", name: "paahaeng", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Type
-      - {label: "Type", name: "btype", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Første reg", name: "foerstereg", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Kilometer", name: "kilometer", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Brændstof", name: "braendstof", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Farve", name: "farve", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Døre", name: "doere", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Type", name: "btype", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Første reg", name: "foerstereg", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Kilometer", name: "kilometer", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Brændstof", name: "braendstof", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Farve", name: "farve", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Døre", name: "doere", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Ydelse
-      - {label: "Effekt", name: "effekt", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Moment", name: "moment", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "Topfart", name: "topfart", widget: "string", tagname: "p", class: "small muted"}
-      - {label: "0-100 km/t", name: "acc", widget: "string", tagname: "p", class: "small muted"}
+      - {label: "Effekt", name: "effekt", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Moment", name: "moment", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "Topfart", name: "topfart", widget: "string", tagname: "p", class: "small muted hidden"}
+      - {label: "0-100 km/t", name: "acc", widget: "string", tagname: "p", class: "small muted hidden"}
       
       - {label: "Billede 1", name: "billede_1", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
       - {label: "Billede 2", name: "billede_2", widget: "image", tagname: "div", class: "media-img optional cms-thumbnail", folder: "img/posts/thumbnails", optional: true}
