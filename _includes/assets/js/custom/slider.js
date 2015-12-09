@@ -6,7 +6,7 @@ $(document).ready(function() {
       paginationSpeed : 400,
       singleItem:true,
       navigationText: ["<span><i class='ion-chevron-left'></span>", "<span><i class='ion-chevron-right'></span>"],
-      autoPlay: 50000,
+      autoPlay: 5000,
       transitionStyle: 'fadeUp',
       lazyLoad: true
   });
