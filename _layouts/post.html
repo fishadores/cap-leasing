@@ -1,212 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{page.title}}</title>
+	<meta property="og:title" content="{{page.title}}"/>
+	<meta property="og:image" content="{{page.billede_1 | prepend: site.baseurl}}"/>
+	<meta property="og:site_name" content="CAPLeasing"/>
+	<meta property="og:description" content="{{page.beskrivelse | xml_escape}}"/>
+	<script>
+		//window.location.href('/');
+		var path = window.location.pathname.substring(1);
+		
+		window.location.href='/#/'+path;
+	</script>
+</head>
+<body>
+	<span class="modal-close" data-dismiss="modal">X</span>
+		<div class="slider-container">
+			<div id="cl-slider-modal" class="owl-carousel owl-theme">
+				{% if page.billede_1 != null %}
+					<div class="item" style="background-image: url({{page.billede_1}});"></div>
+				{% endif %}
+				{% if page.billede_2 != null %}
+					<div class="item" style="background-image: url({{page.billede_2}});"></div>
+				{% endif %}
+				{% if page.billede_3 != null %}
+					<div class="item" style="background-image: url({{page.billede_3}});"></div>
+				{% endif %}
+				{% if page.billede_4 != null %}
+					<div class="item" style="background-image: url({{page.billede_4}});"></div>
+				{% endif %}
+				{% if page.billede_5 != null %}
+					<div class="item" style="background-image: url({{page.billede_5}});"></div>
+				{% endif %}
+				{% if page.billede_6 != null %}
+					<div class="item" style="background-image: url({{page.billede_6}});"></div>
+				{% endif %}
+				{% if page.billede_7 != null %}
+					<div class="item" style="background-image: url({{page.billede_7}});"></div>
+				{% endif %}
+				{% if page.billede_8 != null %}
+					<div class="item" style="background-image: url({{page.billede_8}});"></div>
+				{% endif %}
+				{% if page.billede_9 != null %}
+					<div class="item" style="background-image: url({{page.billede_9}});"></div>
+				{% endif %}
+				{% if page.billede_10 != null %}
+					<div class="item" style="background-image: url({{page.billede_10}});"></div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="car-details">
+			<div class="car-title">
+				{{page.title}}
+				<span class="border-line"></span>
+			</div>
 
+			<div class="car-description">
+				{{page.beskrivelse}}
+			</div>
 
-				<span class="modal-close" data-dismiss="modal">X</span>
-				<div class="slider-container">
-					<div id="cl-slider-modal" class="owl-carousel owl-theme">
-						{% if page.billede_1 != null %}
-							<div class="item" style="background-image: url({{page.billede_1}});"></div>
-						{% endif %}
-						{% if page.billede_2 != null %}
-							<div class="item" style="background-image: url({{page.billede_2}});"></div>
-						{% endif %}
-						{% if page.billede_3 != null %}
-							<div class="item" style="background-image: url({{page.billede_3}});"></div>
-						{% endif %}
-						{% if page.billede_4 != null %}
-							<div class="item" style="background-image: url({{page.billede_4}});"></div>
-						{% endif %}
-						{% if page.billede_5 != null %}
-							<div class="item" style="background-image: url({{page.billede_5}});"></div>
-						{% endif %}
-						{% if page.billede_6 != null %}
-							<div class="item" style="background-image: url({{page.billede_6}});"></div>
-						{% endif %}
-						{% if page.billede_7 != null %}
-							<div class="item" style="background-image: url({{page.billede_7}});"></div>
-						{% endif %}
-						{% if page.billede_8 != null %}
-							<div class="item" style="background-image: url({{page.billede_8}});"></div>
-						{% endif %}
-						{% if page.billede_9 != null %}
-							<div class="item" style="background-image: url({{page.billede_9}});"></div>
-						{% endif %}
-						{% if page.billede_10 != null %}
-							<div class="item" style="background-image: url({{page.billede_10}});"></div>
-						{% endif %}
-					</div>
-				</div>
-				<div class="car-details">
-					<div class="car-title">
-						{{page.title}}
-						<span class="border-line"></span>
-					</div>
-
-					<div class="car-description">
-						{{page.beskrivelse}}
-					</div>
-
-					<div class="list-prices">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-4">
-									<div class="price">
-										<div class="value">{{page.foerstegangsydelse | tusinde }} kr</div>
-										<div class="valueText">førstegangsydelse</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="price green">
-										<div class="value">{{page.maanedlig_ydelse | tusinde }} kr</div>
-										<div class="valueText">månedlig ydelse</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="price">
-										<div class="value">{{page.restvaerdi | tusinde }} kr</div>
-										<div class="valueText">restværdi</div>
-									</div>
-								</div>
+			<div class="list-prices">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="price">
+								<div class="value">{{page.foerstegangsydelse | tusinde }} kr</div>
+								<div class="valueText">førstegangsydelse</div>
 							</div>
 						</div>
-					</div>
-					<div class="car-data">
-						<div class="data-title">
-							Model data
-							<span class="border-line"></span>
-						</div>
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-4">
-									<div class="table">
-										<div class="header">MOTOR</div>
-										<div class="table-row">
-											<span class="th">Volumen</span>
-											<span class="td">{{page.volumen}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Cylindre</span>
-											<span class="td">{{page.cylindre}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Antal ventiler</span>
-											<span class="td">{{page.antal_ventiler}}</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="table">
-										<div class="header">ØKONOMI</div>
-										<div class="table-row">
-											<span class="th">Tank</span>
-											<span class="td">{{page.tank}} l.</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Km/l</span>
-											<span class="td">{{page.kml}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Grøn ejerafgift</span>
-											<span class="td">{{page.groen_ejerafgift | tusinde }} kr/halvår</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="table">
-										<div class="header">TRANSMISSION</div>
-										<div class="table-row">
-											<span class="th">Gear</span>
-											<span class="td">{{page.gear}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Træk</span>
-											<span class="td">{{page.traek}}</span>
-										</div>
-										<div class="table-row">
-
-										</div>
-									</div>
-								</div>
+						<div class="col-md-4">
+							<div class="price green">
+								<div class="value">{{page.maanedlig_ydelse | tusinde }} kr</div>
+								<div class="valueText">månedlig ydelse</div>
 							</div>
-							<div class="row">
-								<div class="col-md-4">
-									<div class="table">
-										<div class="header">MÅL</div>
-										<div class="table-row">
-											<span class="th">Længde</span>
-											<span class="td">{{page.laengde}} cm</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Bredde</span>
-											<span class="td">{{page.bredde}} cm</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Højde</span>
-											<span class="td">{{page.hoejde}} cm</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Vægt</span>
-											<span class="td">{{page.vaegt | tusinde }} kg</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Påhæng</span>
-											<span class="td">{{page.paahaeng | tusinde }} kg</span>
-										</div>
-										<div class="table-row"></div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="table">
-										<div class="header">INFO</div>
-										<div class="table-row">
-											<span class="th">Type</span>
-											<span class="td">{{page.btype}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Første reg.</span>
-											<span class="td">{{page.foerstereg}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Kilometer</span>
-											<span class="td">{{page.kilometer | tusinde }}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Brændstof</span>
-											<span class="td">{{page.braendstof}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Farve</span>
-											<span class="td">{{page.farve}}</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Døre</span>
-											<span class="td">{{page.doere}}</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="table">
-										<div class="header">YDELSE</div>
-										<div class="table-row">
-											<span class="th">Effekt</span>
-											<span class="td">{{page.effekt}} HK</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Moment</span>
-											<span class="td">{{page.moment}} nm</span>
-										</div>
-										<div class="table-row">
-											<span class="th">Topfart</span>
-											<span class="td">{{page.topfart}} km/t</span>
-										</div>
-										<div class="table-row">
-											<span class="th">0-100 km/t</span>
-											<span class="td">{{page.acc}} sek</span>
-										</div>
-										<div class="table-row"></div>
-										<div class="table-row"></div>
-									</div>
-								</div>
+						</div>
+						<div class="col-md-4">
+							<div class="price">
+								<div class="value">{{page.restvaerdi | tusinde }} kr</div>
+								<div class="valueText">restværdi</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="car-data">
+				<div class="data-title">
+					Model data
+					<span class="border-line"></span>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="table">
+								<div class="header">MOTOR</div>
+								<div class="table-row">
+									<span class="th">Volumen</span>
+									<span class="td">{{page.volumen}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Cylindre</span>
+									<span class="td">{{page.cylindre}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Antal ventiler</span>
+									<span class="td">{{page.antal_ventiler}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="table">
+								<div class="header">ØKONOMI</div>
+								<div class="table-row">
+									<span class="th">Tank</span>
+									<span class="td">{{page.tank}} l.</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Km/l</span>
+									<span class="td">{{page.kml}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Grøn ejerafgift</span>
+									<span class="td">{{page.groen_ejerafgift | tusinde }} kr/halvår</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="table">
+								<div class="header">TRANSMISSION</div>
+								<div class="table-row">
+									<span class="th">Gear</span>
+									<span class="td">{{page.gear}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Træk</span>
+									<span class="td">{{page.traek}}</span>
+								</div>
+								<div class="table-row">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="table">
+								<div class="header">MÅL</div>
+								<div class="table-row">
+									<span class="th">Længde</span>
+									<span class="td">{{page.laengde}} cm</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Bredde</span>
+									<span class="td">{{page.bredde}} cm</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Højde</span>
+									<span class="td">{{page.hoejde}} cm</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Vægt</span>
+									<span class="td">{{page.vaegt | tusinde }} kg</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Påhæng</span>
+									<span class="td">{{page.paahaeng | tusinde }} kg</span>
+								</div>
+								<div class="table-row"></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="table">
+								<div class="header">INFO</div>
+								<div class="table-row">
+									<span class="th">Type</span>
+									<span class="td">{{page.btype}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Første reg.</span>
+									<span class="td">{{page.foerstereg}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Kilometer</span>
+									<span class="td">{{page.kilometer | tusinde }}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Brændstof</span>
+									<span class="td">{{page.braendstof}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Farve</span>
+									<span class="td">{{page.farve}}</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Døre</span>
+									<span class="td">{{page.doere}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="table">
+								<div class="header">YDELSE</div>
+								<div class="table-row">
+									<span class="th">Effekt</span>
+									<span class="td">{{page.effekt}} HK</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Moment</span>
+									<span class="td">{{page.moment}} nm</span>
+								</div>
+								<div class="table-row">
+									<span class="th">Topfart</span>
+									<span class="td">{{page.topfart}} km/t</span>
+								</div>
+								<div class="table-row">
+									<span class="th">0-100 km/t</span>
+									<span class="td">{{page.acc}} sek</span>
+								</div>
+								<div class="table-row"></div>
+								<div class="table-row"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+
+				

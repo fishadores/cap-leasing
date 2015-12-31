@@ -12,4 +12,5 @@
 {% include assets/js/custom/slider.js %}
 {% include assets/js/custom/header.js %}
 {% include assets/js/custom/stats.js %}
+{% include assets/js/custom/simple-templating.js %}
 {% include assets/js/custom/showroom.js %}
