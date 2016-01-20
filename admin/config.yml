@@ -31,9 +31,9 @@ collections:
       - {label: "Antal ventiler", name: "antal_ventiler", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Økonomi
-      - {label: "Tank", name: "tank", widget: "string", tagname: "p", class: "small muted hidden"}
-      - {label: "Km/l", name: "kml", widget: "string", tagname: "p", class: "small muted hidden"}
-      - {label: "Grøn ejerafgift", name: "groen_ejerafgift", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Tank", name: "tank", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Km/l", name: "kml", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Grøn ejerafgift", name: "groen_ejerafgift", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Transmission
       - {label: "Gear", name: "gear", widget: "string", tagname: "p", class: "small muted hidden"}
@@ -41,11 +41,11 @@ collections:
       
       
       # Mål
-      - {label: "Længde", name: "laengde", widget: "string", tagname: "p", class: "small muted hidden"}
-      - {label: "Bredde", name: "bredde", widget: "string", tagname: "p", class: "small muted hidden"}
-      - {label: "Højde", name: "hoejde", widget: "string", tagname: "p", class: "small muted hidden"}
-      - {label: "Vægt", name: "vaegt", widget: "string", tagname: "p", class: "small muted hidden"}
-      - {label: "Påhæng", name: "paahaeng", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Længde", name: "laengde", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Bredde", name: "bredde", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Højde", name: "hoejde", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Vægt", name: "vaegt", widget: "string", tagname: "p", class: "small muted hidden"}
+      # - {label: "Påhæng", name: "paahaeng", widget: "string", tagname: "p", class: "small muted hidden"}
       
       # Type
       - {label: "Type", name: "btype", widget: "string", tagname: "p", class: "small muted hidden"}
