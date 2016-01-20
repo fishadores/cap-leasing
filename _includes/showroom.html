@@ -56,19 +56,31 @@
 		<div class="list-prices">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="price">
 							<div class="value"><%=foerstegangsydelse%> kr</div>
 							<div class="valueText">førstegangsydelse</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="price green">
 							<div class="value"><%=maanedlig_ydelse%> kr</div>
 							<div class="valueText">månedlig ydelse</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+                    <div class="col-md-3">
+						<div class="price">
+							<div class="value">
+                                {% if forsikringspris == blank %}
+                                    <%=forsikringspris%> kr
+                                {% else %}
+                                    Ring
+                                {% endif %}
+                            </div>
+							<div class="valueText">forsikringspris</div>
+						</div>
+					</div>
+					<div class="col-md-3">
 						<div class="price">
 							<div class="value"><%=restvaerdi%> kr</div>
 							<div class="valueText">restværdi</div>
@@ -84,7 +96,7 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="table">
 							<div class="header">MOTOR</div>
 							<div class="table-row">
@@ -101,6 +113,7 @@
 							</div>
 						</div>
 					</div>
+                    <!--
 					<div class="col-md-4">
 						<div class="table">
 							<div class="header">ØKONOMI</div>
@@ -118,7 +131,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+                    -->
+					<div class="col-md-6">
 						<div class="table">
 							<div class="header">TRANSMISSION</div>
 							<div class="table-row">
@@ -135,7 +149,9 @@
 						</div>
 					</div>
 				</div>
+                
 				<div class="row">
+                    <!--
 					<div class="col-md-4">
 						<div class="table">
 							<div class="header">MÅL</div>
@@ -162,7 +178,8 @@
 							<div class="table-row"></div>
 						</div>
 					</div>
-					<div class="col-md-4">
+                    -->
+					<div class="col-md-6">
 						<div class="table">
 							<div class="header">INFO</div>
 							<div class="table-row">
@@ -191,7 +208,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="table">
 							<div class="header">YDELSE</div>
 							<div class="table-row">
