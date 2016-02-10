@@ -1,9 +1,9 @@
 ---
-title: "AUDI Q7 S-Line 3. TDI "
+title: BMW 730D
 beskrivelse: "Sort, 19*, Klima, S-line, "
-foerstegangsydelse: "51.250"
-maanedlig_ydelse: "2.708"
-restvaerdi: "117.000"
+foerstegangsydelse: "71.250"
+maanedlig_ydelse: "3.547"
+restvaerdi: "158.000"
 volumen: "3.0"
 cylindre: "0"
 antal_ventiler: "0"
@@ -30,7 +30,7 @@ billede_8: null
 billede_9: null
 billede_10: null
 cmsUserSlug: ""
-date: 2016-02-10 
+date: 2016-02-10T00:00:00.000Z
 layout: post
 ---
 
