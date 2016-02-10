@@ -8,7 +8,7 @@ volumen: "3.0"
 cylindre: "0"
 antal_ventiler: "0"
 gear: Aut.
-traek: 4x4
+traek: "Baghjulstræk "
 btype: "Personbil "
 foerstereg: 01-08-2009
 kilometer: "96.000"
@@ -19,11 +19,11 @@ effekt: "0"
 moment: "0"
 topfart: "250"
 acc: "0"
-billede_1: /images/uploads/q1.jpg
-billede_2: /images/uploads/q2.jpg
-billede_3: /images/uploads/q3.jpg
-billede_4: /images/uploads/q4.jpg
-billede_5: /images/uploads/q5.jpg
+billede_1: /images/uploads/bmw-730d/b1.jpg
+billede_2: /images/uploads/bmw-730d/b2.jpg
+billede_3: /images/uploads/bmw-730d/b3.jpg
+billede_4: /images/uploads/bmw-730d/b4.jpg
+billede_5: null
 billede_6: null
 billede_7: null
 billede_8: null
